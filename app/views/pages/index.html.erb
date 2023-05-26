@@ -1,2 +1,26 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<h1 class="my-5">Hogwarts School of Witchcraft and Wizardry</h1>
+
+
+    <div class="container d-flex align-content-center flex-wrap gap-3">
+        <% @characters.each do |char| %>
+
+                
+                             <div class="card" style="width: 18rem;">
+<div class="card-body">
+            <h5 class="card-title">Wizard name: <br> <%= char.name %></h5>
+            <p class="card-text">Location: <%= char.location %></p>
+            <p class="card-text">House: <%= char.house %></p>
+             </div>
+        </div>
+                    
+
+            
+        <% end %>
+    </div>
+           
+        
+  
+       
+
+
+
