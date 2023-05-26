@@ -4,20 +4,6 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-# 50.times do |i|
-#     #Colaborator.create(name: "Colaborator #{i}", email: "colaborator#{i}@email.com", direction: "Direction colaborator #{i}")
-
-#     @colaborators = Colaborator.create(name: "Colaborator #{i}",
-#     email: "colaborator#{i}@email.com", direction: "Direction
-#     colaborator #{i}")
-#     print @colaborators
-# end
-
-# @characters.each do |char|
-#     char.name
-#     char.location
-#     char.house
-# end
 
 20.times do
     Character.create(name: Faker::Movies::HarryPotter.character, location: Faker::Movies::HarryPotter.location, house: Faker::Movies::HarryPotter.house)
