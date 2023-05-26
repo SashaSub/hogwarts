@@ -3,18 +3,13 @@
 
     <div class="container d-flex align-content-center flex-wrap gap-3">
         <% @characters.each do |char| %>
-
-                
-                             <div class="card" style="width: 18rem;">
-<div class="card-body">
-            <h5 class="card-title">Wizard name: <br> <%= char.name %></h5>
-            <p class="card-text">Location: <%= char.location %></p>
-            <p class="card-text">House: <%= char.house %></p>
-             </div>
-        </div>
-                    
-
-            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Wizard name: <br> <%= char.name %></h5>
+                    <p class="card-text">Location: <%= char.location %></p>
+                    <p class="card-text">House: <%= char.house %></p>
+                </div>
+            </div>
         <% end %>
     </div>
            
