@@ -51,7 +51,7 @@ set :keep_releases, 5
 
 namespace :deploy do
   desc "Seed data into the database"
-  task :seed_db do
+  task :seed do
     on roles(:db) do |host|
       within release_path do
         with rails_env: fetch(:stage) do
