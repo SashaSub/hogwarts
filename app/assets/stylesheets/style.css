@@ -1,5 +1,7 @@
 body {
-  font-family: 'Harry Potter', cursive;
+  /* font-family: 'Harry Potter', cursive; */
 
-  /* font-family: 'Jolly Lodger', cursive; */
+  font-family: 'Jolly Lodger', cursive;
+  font-size: x-large;
+  letter-spacing: 1px;
 } 
